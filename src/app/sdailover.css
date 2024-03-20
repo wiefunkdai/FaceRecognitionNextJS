@@ -1,0 +1,60 @@
+/**
+ * SDaiLover Web Packages.
+ * 
+ * @link      https://www.sdailover.com
+ * @email     teams@sdailover.com
+ * @copyright Copyright (c) ID 2024 SDaiLover. All rights reserved.
+ * @license   https://www.sdailover.com/license.html
+ * This software using Yii Framework has released under the terms of the BSD License.
+ */
+.nav-logo img {
+    padding: 0.25rem;
+    width: auto!important;
+    height: 42px!important;
+}
+.nav-powered img {
+    padding: 0.25rem;
+    width: auto!important;
+    height: 20px!important;
+}
+
+@media (min-width: 576px) {
+    .nav-logo img {
+        padding: 0.25rem;
+        width: auto!important;
+        height: 48px!important;
+    }
+    .nav-powered img {
+        padding: 0.25rem;
+        width: auto!important;
+        height: 24px!important;
+    }
+}
+.scanface-result {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.scanface-result .sd-overlay {
+    width: 100%;
+    height: 100%;
+}
+.table-description caption {
+    caption-side: top;
+    box-sizing: border-box;
+    border-color: inherit;
+    border-style: solid;
+    padding: 0.5rem 0.5rem;
+    border-width: var(--bs-border-width);
+    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
+}
+.table-description > :not(caption) > * > * {
+    --bs-table-color-type: var(--bs-table-striped-color);
+    --bs-table-bg-type: var(--bs-table-striped-bg);
+}
+
+.table-description > :not(caption) > tr > :nth-child(2n) {
+    --bs-table-color-type: unset;
+    --bs-table-bg-type: unset;
+}

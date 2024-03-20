@@ -1,0 +1,13 @@
+{
+  "name": "facerecognition-nextjs",
+  "version": 2,
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "buildCommand": "next build",
+  "env": {
+      "APP_NAME": "Vercel NextJS SDaiLover Face Recognition",
+      "APP_ENV": "production",
+      "APP_DEBUG": "true",
+      "APP_URL": "https://facerecognitionnextjs-wiefunkdai.vercel.app"
+  }
+}

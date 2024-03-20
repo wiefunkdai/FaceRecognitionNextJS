@@ -3,25 +3,55 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "dependencies": {
+    "@sdailover/react-aicamsor": "^1.1.0",
+    "next": "14.1.3",
     "react": "^18",
+    "react-bootstrap": "^2.10.1",
+    "react-cookie": "^7.1.0",
     "react-dom": "^18",
-    "next": "14.1.3"
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.22.3",
+    "text-encoding": "^0.7.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@mediapipe/face_detection": "^0.4.1646425229",
+    "@tensorflow-models/face-detection": "^1.0.2",
+    "@tensorflow-models/mobilenet": "^2.1.1",
+    "@tensorflow/tfjs": "^4.16.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.16.0",
+    "@tensorflow/tfjs-core": "^4.16.0",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "@types/formidable": "^3.4.5",
+    "@types/jquery": "^3.5.29",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vladmandic/face-api": "^1.7.13",
     "autoprefixer": "^10.0.1",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "canvas": "^2.11.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.3",
+    "html-react-parser": "^5.1.8",
+    "jquery": "^3.7.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.3"
+    "tfjs-image-recognition-base": "^0.6.2",
+    "tslib": "^1.11.1",
+    "typescript": "^5",
+    "universal-cookie": "^7.1.0"
   }
 }
