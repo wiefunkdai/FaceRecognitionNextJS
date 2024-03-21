@@ -93,7 +93,6 @@ export default function Finish() {
             return;
         }
         setPhotoImage(photoAccurated.photo);
-        onLoadPhoto();
     });
 
     return (
@@ -102,7 +101,7 @@ export default function Finish() {
                 <Card.Header>Result Accuration Photo</Card.Header>
                 <Card.Body>
                     <div className="scanface-result sd-overlay-wrap">
-                        <Image ref={imagePhoto} src={photoImage} className="w-100" rounded />
+                        <Image ref={imagePhoto} onLoad={onLoadPhoto} src={photoImage} className="w-100" rounded />
                         <Table className="col-12 mt-3 table-description" striped="columns" bordered responsive>
                             <caption>Detail Person :</caption>
                             <tbody>
