@@ -127,7 +127,7 @@ export default function Take() {
         setReadyTakeCapture(false);
         const takePhotoIndex = capturePhotoLength+1;   
         const progressValue = parseInt(((takePhotoIndex / maxLengthCaptured) * 100).toString());
-        SDAICamsor.sendCapturePhoto(thumbCamera.current, '/api/take')
+        SDAICamsor.saveCapturePhoto(thumbCamera.current)
             .then((successMessage: any) => {                
                 setErrorMessage(false);
                 setProgresValue(progressValue);
