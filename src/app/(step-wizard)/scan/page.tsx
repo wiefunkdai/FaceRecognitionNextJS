@@ -103,10 +103,12 @@ export default function Scan() {
 
     const validScanPhoto = () => {
         setReadyScanValidation(false);
+        setCameraLoading(true);
         SDAICamsor.validAndSavePhoto(thumbCamera.current)
             .then((successMessage: any) => {
                 setErrorMessage(false);
                 setVisibleThumbnail(true);
+                setCameraLoading(false);
                 setTimeout(function() {
                     setVisibleThumbnail(false);
                     setCameraLoading(true);
