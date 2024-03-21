@@ -65,7 +65,9 @@ export default function Scan() {
     const [isReadyScanValidation, setReadyScanValidation] = React.useState(false);
 
     const scanFacePrediction = () => {
-        setReadyScanValidation(SDAICamsor.hasFaceDetection());
+        if (!isCameraLoading) {
+            setReadyScanValidation(SDAICamsor.hasFaceDetection());
+        }
         setTimeout(function() {
             scanFacePrediction();
         }, 1000 / 60);
