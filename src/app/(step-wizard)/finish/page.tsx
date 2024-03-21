@@ -52,7 +52,7 @@ import SDaiLover from "@/app/sdailover.js";
  * @link      : https://www.stephanusdai.web.id
  */
 export default function Finish() {
-    const imagePhoto = React.createRef();
+    const imagePhoto = React.useRef(null);
     const SDAICamsor = SDaiLover.AICamsor();
     const [photoImage, setPhotoImage] = React.useState(null);
     const [personAge, setPersonAge] = React.useState(0);
