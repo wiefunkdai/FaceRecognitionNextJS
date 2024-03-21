@@ -47,10 +47,10 @@ export const SDaiLover = {
         aicamsor: null
     },
     AICamsor: () => {
-        if (SDaiLover.store.aicamsor == null) {
-            SDaiLover.store.aicamsor = new SDAICamsor({});
+        if (SDaiLover.store.aicamsor !== null) {
+            return SDaiLover.store.aicamsor;
         }
-        return SDaiLover.store.aicamsor;
+        return SDaiLover.store.aicamsor = new SDAICamsor({});
     }
 };
 
