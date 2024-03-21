@@ -63,7 +63,7 @@ git clone https://github.com/wiefunkdai/FaceRecognitionNextJS.git
 git clone git@github.com:wiefunkdai/FaceRecognitionNextJS.git
 ```
 
-# Install Packages with Composer
+# Install Packages with NPM NodeJS
 
 Then, go to your local folder from downloaded Git.
 
