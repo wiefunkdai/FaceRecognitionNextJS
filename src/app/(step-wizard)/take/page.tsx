@@ -95,6 +95,7 @@ export default function Take() {
     }
 
     const saveCapturePhoto = () => {
+        setCameraLoading(true);
         setReadyTakeCapture(false); 
         const takePhotoIndex = capturePhotoLength+1;  
         const progressValue = parseInt(((takePhotoIndex / maxLengthCaptured) * 100).toString()); 
@@ -103,6 +104,7 @@ export default function Take() {
                 setErrorMessage(false);
                 setProgresValue(progressValue);
                 setVisibleThumbnail(true);
+                setCameraLoading(false);
                 setTimeout(function() {
                     setVisibleThumbnail(false);
                     setCameraLoading(true);
