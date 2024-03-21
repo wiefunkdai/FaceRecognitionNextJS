@@ -67,7 +67,7 @@ export default function Take() {
     const [isReadyTakeCapture, setReadyTakeCapture] = React.useState(false);
 
     const scanFacePrediction = () => {
-        if (capturePhotoLength < maxLengthCaptured) {
+        if (capturePhotoLength < maxLengthCaptured && !isCameraLoading) {
             setReadyTakeCapture(SDAICamsor.hasFaceDetection());
         }
         setTimeout(function() {
