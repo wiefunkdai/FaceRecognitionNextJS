@@ -54,7 +54,7 @@ export default function Home() {
       <p className="fs-5 col-md-8">Quickly and easily get started with machine learning technology that enables identifying and verifying individuals by analyzing and comparing patterns in their facial features. Download this source examples to get started.</p>
       <div className="mb-5">
         <Link type="button" className="btn btn-primary btn-lg px-4" href={ '/take' }><i className="bi bi-record-circle-fill"></i> Start Demo</Link>
-        <Link type="button" className="btn btn-outline-primary btn-lg px-4 ms-0 ms-md-2 mt-3 mt-md-0" href={ 'https://github.com/wiefunkdai/facerecognition-nextjs' }><i className="bi bi-github"></i> Get Source</Link>
+        <Link type="button" className="btn btn-outline-primary btn-lg px-4 ms-0 ms-md-2 mt-3 mt-md-0" href={ 'https://github.com/wiefunkdai/FaceRecognitionNextJS' }><i className="bi bi-github"></i> Get Source</Link>
       </div>
       <hr className="col-3 col-md-2 mb-5" />
       <div className="row g-3 g-md-5">
